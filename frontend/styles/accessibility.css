@@ -1,0 +1,324 @@
+:root {
+  --indigo: #5948c8;
+  --muted: #5d5a65;
+}
+
+body {
+  color: #1d1b24;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 12px;
+  padding: 12px 16px;
+  border: 2px solid #4133aa;
+  border-radius: 6px;
+  background: #fff;
+  color: #21186c;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+::placeholder {
+  color: #5d5a65;
+  opacity: 1;
+}
+
+:focus-visible {
+  outline: 3px solid #4133aa;
+  outline-offset: 3px;
+}
+
+.btn,
+.icon-btn,
+.save,
+.header nav a,
+.side-nav a,
+.settings-nav a,
+.preference-grid button,
+.toggle {
+  min-height: 44px;
+}
+
+button {
+  min-height: 44px;
+}
+
+.icon-btn {
+  display: inline-flex;
+  min-width: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  display: inline-flex;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.save {
+  width: 44px;
+  height: 44px;
+}
+
+.preference-grid button {
+  min-height: 54px;
+  min-width: 0;
+  padding-inline: 12px;
+  font-size: 13px;
+}
+
+.preference-grid button span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  width: 48px;
+  height: 44px;
+  align-items: center;
+  padding: 0;
+  border-radius: 22px;
+  background: transparent;
+}
+
+.toggle::before {
+  position: absolute;
+  inset: 10px 4px;
+  border-radius: 12px;
+  background: #625f6a;
+  content: "";
+}
+
+.toggle.on::before {
+  background: var(--indigo);
+}
+
+.toggle i {
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.toggle.on i {
+  transform: translateX(20px);
+}
+
+.up-row > div:nth-child(3) span,
+.up-row > small {
+  color: #5d5a65;
+}
+
+.trust {
+  color: #5d5a65;
+}
+
+.trust span,
+.floating-card small,
+.side-profile small,
+.selected-event span,
+.notification span,
+.profile-card span,
+.divider span,
+.breadcrumbs,
+.form-breadcrumb,
+.settings-nav a,
+.time,
+.months span,
+.dough span,
+.meta-row small,
+.category-row small,
+.event-info .eyebrow {
+  color: #5d5a65;
+}
+
+.badge:not(.green) {
+  color: #a1263d;
+}
+
+.badge.green {
+  color: #155f3b;
+}
+
+.stat small {
+  color: #17613d;
+}
+
+.google {
+  color: #174ea6;
+}
+
+small {
+  color: #5d5a65;
+}
+
+.close {
+  color: #5d5a65;
+}
+
+small,
+.time,
+.months span,
+.dough span,
+.meta-row small,
+.breadcrumbs,
+.form-breadcrumb,
+.notification span,
+.profile-card span,
+.divider span,
+.selected-event span,
+.side-profile small {
+  font-size: 12px;
+}
+
+.auth-visual::after {
+  background: linear-gradient(
+    0deg,
+    rgba(18, 12, 48, 0.82),
+    rgba(28, 20, 64, 0.62)
+  );
+}
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.months span {
+  min-width: 0;
+  text-align: center;
+}
+
+.chart-grid > *,
+.stats > *,
+.panel,
+.app-main,
+.line-chart,
+.dough-wrap,
+.dough-wrap .legend {
+  min-width: 0;
+}
+
+.line-chart svg {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.kicker,
+.badge,
+.eyebrow {
+  font-size: 12px;
+}
+
+.side-nav a {
+  font-size: 13px;
+}
+
+.dough-wrap {
+  gap: 16px;
+}
+
+.dough {
+  flex: 0 0 auto;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .side-nav a {
+    font-size: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .timeline-event {
+    grid-template-columns: 44px 8px minmax(0, 1fr);
+  }
+
+  .timeline-event:not(:last-child)::after {
+    left: 48px;
+  }
+
+  .schedule-card {
+    grid-template-columns: 38px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 6px 10px;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .schedule-card > img,
+  .schedule-card > .icon:first-child {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 38px;
+    height: 38px;
+  }
+
+  .schedule-card > div {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .schedule-card > button {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+
+  .settings-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 0 16px;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .settings-nav a {
+    grid-template-columns: 18px minmax(0, 1fr);
+    min-height: 48px;
+    height: auto;
+    padding-inline: 8px;
+    font-size: 12px;
+  }
+
+  .settings-nav a .icon:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .dough-wrap {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .dough {
+    width: 112px;
+    height: 112px;
+  }
+
+  .dough::before {
+    width: 68px;
+    height: 68px;
+  }
+
+  .months span {
+    font-size: 10px;
+  }
+
+  .side-nav a {
+    font-size: 11px;
+  }
+}
