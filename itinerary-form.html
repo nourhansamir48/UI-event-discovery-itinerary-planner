@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add an event, date, time and notes to your gather. itinerary.">
+    <title>Add to Itinerary — gather.</title>
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="soft-bg">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="header flex items-center"><a class="logo-button" href="index.html">
+      <div class="logo"><span class="logo-mark"><i></i><b></b></span><strong>gather.</strong>
+      </div></a>
+      <nav aria-label="Primary navigation"><a class="" href="explore.html">Explore</a><a class="active" href="itinerary.html">My Itinerary</a><a class="" href="profile.html">Profile</a>
+      </nav>
+      <div class="head-actions flex items-center"><button class="icon-btn" type="button" aria-label="Notifications"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></button><a class="btn outline inline-flex items-center justify-center" href="login.html">Log in</a>
+      </div>
+    </header>
+    <main id="main-content" class="form-page">
+      <div class="form-breadcrumb"><a href="itinerary.html">My Itinerary</a><span>/</span> Add event
+    
+      </div>
+      <form class="form-card">
+        <div class="form-intro"><svg class="icon" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          <div>
+            <h1>Add event to itinerary
+          
+            </h1>
+            <p>Build your schedule and make every moment count.
+          
+            </p>
+          </div>
+        </div>
+        <div class="form-section">
+          <div><b>Event details</b>
+            <p>Select the event you’d like to add.
+          
+            </p>
+          </div>
+          <div class="form-fields"><label class="field"><span>Event</span><select name="event" required><option value="" disabled selected>Select an event</option><option>Summer Music Festival</option><option>Food & Wine Expo</option><option>Future Tech Conference</option><option>Architecture After Hours</option></select></label>
+            <div class="selected-event"><img src="https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=300&q=80" alt="Event preview">
+              <div><b>Choose an event above</b><span>Your selection will be added to this demo itinerary.</span>
+              </div><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="form-section">
+          <div><b>Date & time</b>
+            <p>Choose when it fits your plan.
+          
+            </p>
+          </div>
+          <div class="form-fields two-fields"><label class="field"><span>Date</span><input name="date" type="date" value="2027-06-10" required></label><label class="field"><span>Start time</span><input name="startTime" type="time" value="16:00" required></label><label class="field"><span>End time</span><input name="endTime" type="time" value="23:00" required></label><label class="field"><span>Time zone</span><select name="timeZone" required><option>Central European Time</option></select></label>
+          </div>
+        </div>
+        <div class="form-section">
+          <div><b>Notes</b>
+            <p>Add anything you want to remember.
+          
+            </p>
+          </div><label class="field form-fields"><span>Notes (optional)</span><textarea name="notes" placeholder="Meet Anna at the north entrance..."></textarea></label>
+        </div>
+        <div class="form-actions"><a class="btn outline inline-flex items-center justify-center" href="itinerary.html">Cancel</a><button class="btn primary inline-flex items-center justify-center" type="button">Save to itinerary</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
