@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See your upcoming events, saved events and activity at a glance in gather.">
+    <title>Dashboard | gather.</title>
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a href="index.html" class="logo" aria-label="gather. home"><span class="logo-mark"><i></i><b></b></span><strong>gather.</strong></a>
+        <nav aria-label="Primary navigation" class="side-nav"><a class="active" href="dashboard.html" aria-current="page"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Dashboard</a><a href="explore.html"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/></svg>Explore</a><a href="itinerary.html"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>My Itinerary</a><a href="explore.html"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>Discover Events</a><a href="profile.html"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c.7-4 3.3-6 8-6s7.3 2 8 6"/></svg>Profile</a></nav>
+        <div class="side-profile">
+          <div class="avatar" aria-hidden="true">SJ</div>
+          <div><b>Sarah Johnson</b><small>sarah@gather.app</small></div>
+        </div>
+      </aside>
+
+      <main id="main-content" class="app-main">
+        <div class="app-head">
+          <div>
+            <h1>Welcome back, Sarah!</h1>
+            <p>Here&rsquo;s what&rsquo;s happening with your events.</p>
+          </div>
+          <div class="head-actions">
+            <button class="icon-btn" type="button" aria-label="Notifications"><svg class="icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></button>
+            <div class="avatar" role="img" aria-label="Sarah Johnson">SJ</div>
+          </div>
+        </div>
+
+        <section class="stats" aria-label="Summary">
+          <div class="stat"><div class="stat-icon"><svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></div><div><p>Upcoming events</p><h2>4</h2><small>+2 this month</small></div></div>
+          <div class="stat"><div class="stat-icon"><svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></div><div><p>Saved events</p><h2>12</h2><small>+3 this month</small></div></div>
+          <div class="stat"><div class="stat-icon"><svg class="icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8V5h18v3a3 3 0 0 0 0 6v5H3v-5a3 3 0 0 0 0-6Z"/><path d="M13 5v14"/></svg></div><div><p>Total spending</p><h2>$195</h2><small>+8% this month</small></div></div>
+        </section>
+
+        <div class="chart-grid">
+          <section class="panel chart-panel" aria-labelledby="monthly-heading">
+            <div class="panel-head">
+              <div>
+                <h3 id="monthly-heading">Monthly events attended</h3>
+                <p>Your activity over the last 12 months</p>
+              </div>
+              <div>
+                <label class="sr-only" for="period">Time period</label>
+                <select id="period" name="period"><option>This year</option><option>Last year</option></select>
+              </div>
+            </div>
+            <figure class="line-chart">
+              <div class="grid-lines"></div>
+              <svg viewBox="0 0 600 210" preserveAspectRatio="none" role="img" aria-labelledby="line-title line-desc">
+                <title id="line-title">Line chart of events attended per month</title>
+                <desc id="line-desc">Attendance rises from 1 event in July to a peak of 9 in February, then ends at 8 in June. Exact values are in the table below the chart.</desc>
+                <defs>
+                  <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6D5AE6" stop-opacity="0.22"/><stop offset="1" stop-color="#6D5AE6" stop-opacity="0.02"/></linearGradient>
+                </defs>
+                <path class="area" d="M10.0 188 L62.7 160 L115.5 95 L168.2 122 L220.9 57 L273.6 139 L326.4 85 L379.1 12 L431.8 105 L484.6 46 L537.3 61 L590.0 19 L590.0 210 L10.0 210 Z"/>
+                <path class="line" d="M10.0 188 L62.7 160 L115.5 95 L168.2 122 L220.9 57 L273.6 139 L326.4 85 L379.1 12 L431.8 105 L484.6 46 L537.3 61 L590.0 19" vector-effect="non-scaling-stroke"/>
+                <path d="M10.0 188h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M10.0 188h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M62.7 160h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M62.7 160h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M115.5 95h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M115.5 95h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M168.2 122h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M168.2 122h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M220.9 57h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M220.9 57h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M273.6 139h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M273.6 139h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M326.4 85h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M326.4 85h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M379.1 12h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M379.1 12h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M431.8 105h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M431.8 105h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M484.6 46h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M484.6 46h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M537.3 61h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M537.3 61h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M590.0 19h0" stroke="#5948c8" stroke-width="11" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="M590.0 19h0" stroke="#fff" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+              </svg>
+              <div class="months" aria-hidden="true"><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div>
+              <table class="sr-only">
+                <caption>Events attended per month</caption>
+                <thead><tr><th scope="col">Month</th><th scope="col">Events</th></tr></thead>
+                <tbody><tr><th scope="row">Jul</th><td>1</td></tr><tr><th scope="row">Aug</th><td>2</td></tr><tr><th scope="row">Sep</th><td>5</td></tr><tr><th scope="row">Oct</th><td>4</td></tr><tr><th scope="row">Nov</th><td>7</td></tr><tr><th scope="row">Dec</th><td>3</td></tr><tr><th scope="row">Jan</th><td>5</td></tr><tr><th scope="row">Feb</th><td>9</td></tr><tr><th scope="row">Mar</th><td>4</td></tr><tr><th scope="row">Apr</th><td>7</td></tr><tr><th scope="row">May</th><td>6</td></tr><tr><th scope="row">Jun</th><td>8</td></tr></tbody>
+              </table>
+            </figure>
+          </section>
+
+          <section class="panel dough-panel" aria-labelledby="types-heading">
+            <div class="panel-head">
+              <div>
+                <h3 id="types-heading">Saved events by type</h3>
+                <p>Your interests at a glance</p>
+              </div>
+            </div>
+            <div class="dough-wrap">
+              <div class="dough" role="img" aria-label="Donut chart of 12 saved events: Music 40%, Sports 22%, Arts 18%, Food 12%, Travel 8%.">
+                <div><b>12</b><span>events</span></div>
+              </div>
+              <div class="legend">
+                <div><i></i><span>Music</span><b>40%</b></div>
+                <div><i class="c1"></i><span>Sports</span><b>22%</b></div>
+                <div><i class="c2"></i><span>Arts</span><b>18%</b></div>
+                <div><i class="c3"></i><span>Food</span><b>12%</b></div>
+                <div><i class="c4"></i><span>Travel</span><b>8%</b></div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel upcoming" aria-labelledby="schedule-heading">
+          <div class="panel-head">
+            <div>
+              <h3 id="schedule-heading">Upcoming schedule</h3>
+              <p>Your next moments</p>
+            </div>
+            <a href="itinerary.html">View itinerary<svg class="icon" aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+          </div>
+          <div role="list">
+            <div class="up-row" role="listitem"><div class="date-box"><b>10</b><span>JUN</span></div><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=200&q=70" alt="" width="42" height="42"><div><b>Summer Music Festival</b><span>Tempelhof, Berlin</span></div><small>4:00 PM</small><span class="badge">Confirmed</span></div>
+            <div class="up-row" role="listitem"><div class="date-box"><b>10</b><span>JUN</span></div><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=200&q=70" alt="" width="42" height="42"><div><b>Food &amp; Wine Expo</b><span>K&uuml;hlhaus, Berlin</span></div><small>7:30 PM</small><span class="badge">Confirmed</span></div>
+            <div class="up-row" role="listitem"><div class="date-box"><b>12</b><span>JUN</span></div><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=200&q=70" alt="" width="42" height="42"><div><b>Architecture After Hours</b><span>Museum Island, Berlin</span></div><small>5:00 PM</small><span class="badge">Confirmed</span></div>
+            <div class="up-row" role="listitem"><div class="date-box"><b>12</b><span>JUN</span></div><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=200&q=70" alt="" width="42" height="42"><div><b>Future Tech Conference</b><span>CityCube, Berlin</span></div><small>8:00 PM</small><span class="badge">Confirmed</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
