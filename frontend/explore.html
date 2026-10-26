@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Berlin events and plan a weekend with gather."
+    />
+
+    <title>Explore events — gather.</title>
+
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/explore-details.css" />
+  </head>
+
+  <body class="explore-details">
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+
+    <div class="screen">
+      <!-- Header -->
+      <header class="header flex items-center">
+        <a class="logo-button" href="index.html" aria-label="gather. home">
+          <span class="logo">
+            <span class="logo-mark" aria-hidden="true">
+              <i></i>
+              <b></b>
+            </span>
+            <strong>gather.</strong>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a class="active" href="explore.html" aria-current="page">
+            Explore
+          </a>
+          <a href="itinerary.html">My Itinerary</a>
+          <a href="profile.html">Profile</a>
+        </nav>
+
+        <div class="head-actions flex items-center">
+          <a
+            class="btn outline inline-flex items-center justify-center"
+            href="login.html"
+          >
+            Log in
+          </a>
+        </div>
+      </header>
+
+      <main id="main-content" class="explore-page">
+        <!-- Page title -->
+        <div class="explore-title ed-intro">
+          <div>
+            <span class="kicker">EXPLORE</span>
+            <h1>Discover your next experience</h1>
+            <p>Browse the moments worth gathering for.</p>
+          </div>
+        </div>
+
+        <!-- Static search and filter interface -->
+        <form
+          class="ed-filter-panel"
+          aria-label="Find events"
+          aria-describedby="filter-note"
+        >
+          <div class="ed-filter-grid">
+            <label class="ed-field ed-search" for="keyword">
+              Event or venue
+              <input
+                id="keyword"
+                name="keyword"
+                type="search"
+                placeholder="Enter an event name or venue"
+              />
+            </label>
+
+            <label class="ed-field" for="start-date">
+              From date
+              <input id="start-date" name="start-date" type="date" />
+            </label>
+
+            <label class="ed-field" for="end-date">
+              To date
+              <input id="end-date" name="end-date" type="date" />
+            </label>
+
+            <label class="ed-field" for="category">
+              Category
+              <select id="category" name="category">
+                <option>All categories</option>
+                <option>Music</option>
+                <option>Food</option>
+                <option>Tech</option>
+                <option>Arts</option>
+                <option>Sports</option>
+              </select>
+            </label>
+
+            <label class="ed-field" for="price">
+              Price
+              <select id="price" name="price">
+                <option>Any price</option>
+                <option>Free</option>
+                <option>Paid</option>
+              </select>
+            </label>
+
+            <label class="ed-field" for="city">
+              City
+              <select id="city" name="city">
+                <option>Berlin</option>
+                <option>All cities</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="ed-filter-footer">
+            <p id="filter-note" class="ed-note">
+              Static preview: filters do not change the sample results.
+            </p>
+
+            <button class="btn primary" type="button">Search events</button>
+          </div>
+        </form>
+
+        <!-- Event results -->
+        <section aria-labelledby="results-heading">
+          <div class="results-head">
+            <h2 id="results-heading">All events</h2>
+            <p class="ed-note">4 sample events</p>
+          </div>
+
+          <div class="ed-grid">
+            <!-- Event 1 -->
+            <article class="event-card">
+              <div class="event-image">
+                <img
+                  src="public/explore/event-0.svg"
+                  alt=""
+                  width="800"
+                  height="500"
+                />
+                <span class="badge">Selling fast</span>
+              </div>
+
+              <div class="event-info">
+                <p class="eyebrow">June 10, 2027 · Music</p>
+                <h2>Summer Music Festival</h2>
+                <p>Tempelhof Field, Berlin</p>
+
+                <div class="ed-card-bottom">
+                  <strong>$45</strong>
+                  <a class="btn outline" href="event-details.html">
+                    View details
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 2 -->
+            <article class="event-card">
+              <div class="event-image">
+                <img
+                  src="public/explore/event-1.svg"
+                  alt=""
+                  width="800"
+                  height="500"
+                />
+                <span class="badge green">Free</span>
+              </div>
+
+              <div class="event-info">
+                <p class="eyebrow">June 10, 2027 · Food</p>
+                <h2>Food &amp; Wine Expo</h2>
+                <p>Kühlhaus, Berlin</p>
+
+                <div class="ed-card-bottom">
+                  <strong>Free</strong>
+                  <a class="btn outline" href="itinerary-form.html">
+                    Plan this event
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 3 -->
+            <article class="event-card">
+              <div class="event-image">
+                <img
+                  src="public/explore/event-2.svg"
+                  alt=""
+                  width="800"
+                  height="500"
+                />
+                <span class="badge">Upcoming</span>
+              </div>
+
+              <div class="event-info">
+                <p class="eyebrow">June 12, 2027 · Tech</p>
+                <h2>Future Tech Conference</h2>
+                <p>CityCube, Berlin</p>
+
+                <div class="ed-card-bottom">
+                  <strong>$120</strong>
+                  <a class="btn outline" href="itinerary-form.html">
+                    Plan this event
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Event 4 -->
+            <article class="event-card">
+              <div class="event-image">
+                <img
+                  src="public/explore/event-3.svg"
+                  alt=""
+                  width="800"
+                  height="500"
+                />
+                <span class="badge">Popular</span>
+              </div>
+
+              <div class="event-info">
+                <p class="eyebrow">June 12, 2027 · Arts</p>
+                <h2>Architecture After Hours</h2>
+                <p>Museum Island, Berlin</p>
+
+                <div class="ed-card-bottom">
+                  <strong>$30</strong>
+                  <a class="btn outline" href="itinerary-form.html">
+                    Plan this event
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- One page of sample results -->
+          <nav class="pagination" aria-label="Event result pages">
+            <span
+              class="ed-page-number"
+              aria-current="page"
+              aria-label="Page 1"
+            >
+              1
+            </span>
+          </nav>
+
+          <p class="ed-note">
+            The festival has a full details preview. Other events open the
+            itinerary form; select your event there.
+          </p>
+        </section>
+      </main>
+
+      <footer class="ed-footer">
+        gather. · Make every moment count. · Static Phase 2 prototype
+      </footer>
+    </div>
+  </body>
+</html>

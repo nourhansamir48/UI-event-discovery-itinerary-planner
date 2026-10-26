@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Berlin events and plan a weekend with gather.">
+  <title>Summer Music Festival — gather.</title>
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+  <!-- Existing compiled Tailwind stylesheet supplied by the team. -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Page-scoped additions: no overwrite of the shared stylesheet. -->
+  <link rel="stylesheet" href="styles/explore-details.css">
+</head>
+<body class="explore-details">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="screen">
+<!-- Shared visual language: reuse the team's existing header and button classes. -->
+<header class="header flex items-center">
+  <a class="logo-button" href="index.html" aria-label="gather. home">
+    <span class="logo"><span class="logo-mark" aria-hidden="true"><i></i><b></b></span><strong>gather.</strong></span>
+  </a>
+  <nav aria-label="Primary navigation">
+    <a class="active" href="explore.html" >Explore</a>
+    <a href="itinerary.html">My Itinerary</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+  <div class="head-actions flex items-center"><a class="btn outline inline-flex items-center justify-center" href="login.html">Log in</a></div>
+</header>
+  <main id="main-content" class="details-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="explore.html">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Summer Music Festival</span></nav>
+    <div class="details-hero"><img src="public/explore/event-0.svg" alt="Music poster for Gather Berlin 2027" width="800" height="500"></div>
+    <div class="details-grid">
+      <article class="details-content">
+        <span class="pill">MUSIC · SELLING FAST</span>
+        <h1>Summer Music Festival</h1>
+        <p class="lead">An afternoon of live music, good food, and the best summer energy in Berlin.</p>
+        <!-- Keep these values consistent with the team's itinerary page. -->
+        <div class="meta-row">
+          <div><span><b>June 10, 2027</b><small>Thursday · 4:00–7:00 PM</small></span></div>
+          <div><span><b>Tempelhof Field</b><small>Berlin, Germany</small></span></div>
+          <div><span><b>From $45</b><small>Standard admission</small></span></div>
+        </div>
+        <hr>
+        <h2>About this event</h2>
+        <p>Gather with friends for an afternoon of performances by emerging artists and headline acts. Discover your next favorite sound, enjoy food from local vendors, and make a moment of it.</p>
+        <h2>What to expect</h2>
+        <ul><li>Live performances on the main stage.</li><li>Food stalls and places to relax between sets.</li><li>An outdoor setting with space to meet friends.</li></ul>
+        <h2>Event schedule</h2>
+        <ol class="ed-agenda">
+          <li><time datetime="2027-06-10T16:00:00+02:00">4:00 PM</time><span>Doors open and opening artists</span></li>
+          <li><time datetime="2027-06-10T17:00:00+02:00">5:00 PM</time><span>Main-stage performances</span></li>
+          <li><time datetime="2027-06-10T18:00:00+02:00">6:00 PM</time><span>Headline set</span></li>
+          <li><time datetime="2027-06-10T19:00:00+02:00">7:00 PM</time><span>Event ends</span></li>
+        </ol>
+        <p class="ed-note">Illustrative event content for the course prototype. Times use Berlin summer time (CEST).</p>
+        <a class="btn outline" href="explore.html">Back to Explore</a>
+      </article>
+      <aside class="booking" aria-labelledby="booking-heading">
+        <h2 id="booking-heading">Make it part of your plan</h2>
+        <div class="price"><span>Standard admission</span><b>$45</b><small>Sample ticket price · per person</small></div>
+        <p>Add the festival to your weekend itinerary.</p>
+        <a class="btn primary" href="itinerary-form.html">Save to itinerary</a>
+        <button class="btn outline" type="button" aria-describedby="attend-note">Mark as attending</button>
+        <p id="attend-note" class="ed-note">Attendance is a static control. The form opens without saving or preselecting an event.</p>
+        <section class="ed-venue" aria-labelledby="venue-heading">
+          <h2 id="venue-heading">Venue</h2>
+          <img class="ed-map" src="public/explore/venue.svg" width="500" height="240" alt="Schematic venue marker, not a geographic map">
+          <p><strong>Tempelhof Field</strong><br>Tempelhofer Damm, 12101 Berlin</p>
+          <p class="ed-note">Map integration is reserved for a later phase.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+    <footer class="ed-footer">gather. · Make every moment count. · Static Phase 2 prototype</footer>
+  </div>
+</body>
+</html>
