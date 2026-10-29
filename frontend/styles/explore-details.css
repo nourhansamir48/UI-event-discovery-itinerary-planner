@@ -1,0 +1,62 @@
+/* Only these two pages use this stylesheet. The team's styles.css is unchanged. */
+.explore-details { overflow-x: visible; }
+.explore-details .header { gap:40px; }
+.explore-details .header nav a { justify-content:center; }
+.explore-details .ed-intro { margin-bottom:26px; }
+.explore-details .ed-filter-panel { padding:22px; background:#f6f5fa; border:1px solid var(--line); border-radius:10px; margin:28px 0; }
+.explore-details .ed-filter-grid { display:grid; grid-template-columns:2fr 1fr 1fr; gap:18px; }
+.explore-details .ed-field { display:flex; flex-direction:column; gap:8px; font-size:14px; font-weight:600; min-width:0; }
+.explore-details input,.explore-details select { width:100%; min-width:0; min-height:46px; padding:10px 12px; color:#1d1b24; background:#fff; border:1px solid #76727f; border-radius:6px; font-size:16px; }
+.explore-details .ed-filter-footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; margin-top:18px; }
+.explore-details .ed-note { font-size:13px; color:var(--muted); margin:0; }
+.explore-details .ed-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.explore-details .event-card { cursor:default; }
+.explore-details .event-info h2 { font-size:21px; letter-spacing:-.5px; margin:8px 0; }
+.explore-details .event-info h2 a { color:inherit; }
+.explore-details .event-info p { font-size:14px; }
+.explore-details .event-info .eyebrow { font-size:12px; }
+.explore-details .ed-card-bottom { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-top:18px; }
+.explore-details .ed-card-bottom a { text-decoration:none; }
+.explore-details .event-image img { object-position:center; }
+.explore-details .ed-page-number { width:44px; min-height:44px; display:grid; place-items:center; border-radius:6px; background:var(--indigo); color:#fff; font-weight:600; }
+.explore-details .ed-footer { border-top:1px solid var(--line); padding:24px 5.55%; font-size:13px; color:var(--muted); }
+.explore-details .breadcrumbs { white-space:normal; font-size:14px; }
+.explore-details .details-hero { height:auto; aspect-ratio:16 / 6; background:#5442b5; }
+.explore-details .details-hero::after { display:none; }
+.explore-details .details-hero img { object-position:center; }
+.explore-details .meta-row { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.explore-details .meta-row b { font-size:14px; }
+.explore-details .meta-row small { font-size:13px; }
+.explore-details .details-content > p:not(.lead) { font-size:15px; }
+.explore-details .booking { position:static; }
+.explore-details .booking h2 { font-size:22px; }
+.explore-details .booking > p { font-size:14px; }
+.explore-details .booking .price small { font-size:13px; }
+.explore-details .ed-agenda { padding:0; list-style:none; }
+.explore-details .ed-agenda li { padding:16px 0; border-bottom:1px solid var(--line); display:flex; gap:20px; font-size:15px; }
+.explore-details .ed-agenda time { min-width:75px; color:var(--indigo); font-weight:600; }
+.explore-details .ed-venue { margin-top:24px; border:1px solid var(--line); background:#f6f5fa; padding:20px; border-radius:8px; }
+.explore-details .ed-venue p { font-size:14px; margin:8px 0; }
+.explore-details .ed-map { width:100%; height:180px; border:0; border-radius:8px; display:block; }
+@media(max-width:900px) {
+ .explore-details .ed-filter-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .explore-details .ed-search { grid-column:1/-1; }
+ .explore-details .details-grid { grid-template-columns:minmax(0,1fr); gap:28px; }
+ .explore-details .booking { max-width:none; }
+}
+@media(max-width:640px) {
+ .explore-details .ed-filter-panel { padding:16px; }
+ .explore-details .ed-filter-grid,.explore-details .ed-grid { grid-template-columns:1fr; }
+ .explore-details .ed-filter-footer .btn { width:100%; }
+ .explore-details .meta-row { grid-template-columns:1fr; gap:18px; }
+ .explore-details .details-hero { aspect-ratio:8 / 5; }
+ .explore-details .booking { order:0; }
+ .explore-details .header { gap:12px; }
+ .explore-details .ed-footer { padding-bottom:100px; }
+ .explore-details .header nav a { font-size:12px; }
+ .explore-details .details-content h1 { font-size:32px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .explore-details .btn,.explore-details .event-card { transition:none; }
+ .explore-details .btn:hover,.explore-details .event-card:hover { transform:none; }
+}
